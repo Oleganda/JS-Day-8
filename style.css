@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(249, 237, 239);
+}
+
+
+#cart-items {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(227, 199, 204);
+    position: fixed;
+    top: 0;
+    overflow: scroll;
+    color: white;
+    z-index: 2;
+
+}
+
+#total {
+    height: 100px;
+        width: 10%;
+        background-color: rgb(176, 128, 137);
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        z-index: 3;
+
+}
+
+#main-container {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            justify-content: center;
+            gap: 30px;
+            margin: 120px 0 30px 0;
+           
+        
+
+}
+.btn-x,
+.btn-plus,
+.btn-minus {
+   
+    border-radius: 10%;
+    background-color: rgb(176, 128, 137);
+    border-color: rgb(176, 128, 137);
+    cursor: pointer;
+    color: white;
+
+}
+
+.btn-x.btn-x:hover,
+.btn-minus:hover,
+.btn-plus:hover
+{   
+        background-color: rgb(189, 145, 153);
+        border-color: rgb(189, 145, 153);
+        color: white;
+    }
+
+img {
+    width: 80px;
+    object-fit: cover;
+    height: 400px;
+}
